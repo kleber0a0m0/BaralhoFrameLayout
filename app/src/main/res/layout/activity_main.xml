@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/mesa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fundo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Cartas:"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="244dp"
+        android:layout_height="333dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mesa">
+
+        <ImageView
+            android:id="@+id/recarregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="recarregarApp"
+            app:srcCompat="@drawable/recarregar" />
+
+        <ImageView
+            android:id="@+id/club1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/club1" />
+
+        <ImageView
+            android:id="@+id/diamond10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/diamond10" />
+
+        <ImageView
+            android:id="@+id/heart11jack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/heart11jack" />
+
+        <ImageView
+            android:id="@+id/joker3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/joker3" />
+
+        <ImageView
+            android:id="@+id/club10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/club10" />
+
+        <ImageView
+            android:id="@+id/diamond11jack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/diamond11jack" />
+
+        <ImageView
+            android:id="@+id/heart12queen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/heart12queen" />
+
+        <ImageView
+            android:id="@+id/spade1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/spade1" />
+
+        <ImageView
+            android:id="@+id/club11jack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/club11jack" />
+
+        <ImageView
+            android:id="@+id/diamond12queen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/diamond12queen" />
+
+        <ImageView
+            android:id="@+id/heart13king"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/heart13king" />
+
+        <ImageView
+            android:id="@+id/spade10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/spade10" />
+
+        <ImageView
+            android:id="@+id/club12queen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/club12queen" />
+
+        <ImageView
+            android:id="@+id/diamond13king"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/diamond13king" />
+
+        <ImageView
+            android:id="@+id/heart2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/heart2" />
+
+        <ImageView
+            android:id="@+id/spade11jack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/spade11jack" />
+
+        <ImageView
+            android:id="@+id/club13king"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/club13king" />
+
+        <ImageView
+            android:id="@+id/diamond2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/diamond2" />
+
+        <ImageView
+            android:id="@+id/heart3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/heart3" />
+
+        <ImageView
+            android:id="@+id/spade12queen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/spade12queen" />
+
+        <ImageView
+            android:id="@+id/club2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/club2" />
+
+        <ImageView
+            android:id="@+id/diamond3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/diamond3" />
+
+        <ImageView
+            android:id="@+id/heart4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/heart4" />
+
+        <ImageView
+            android:id="@+id/spade13king"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/spade13king" />
+
+        <ImageView
+            android:id="@+id/club3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/club3" />
+
+        <ImageView
+            android:id="@+id/diamond4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/diamond4" />
+
+        <ImageView
+            android:id="@+id/heart5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/heart5" />
+
+        <ImageView
+            android:id="@+id/spade2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/spade2" />
+
+        <ImageView
+            android:id="@+id/club4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/club4" />
+
+        <ImageView
+            android:id="@+id/diamond5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/diamond5" />
+
+        <ImageView
+            android:id="@+id/heart6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/heart6" />
+
+        <ImageView
+            android:id="@+id/spade3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/spade3" />
+
+        <ImageView
+            android:id="@+id/club5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/club5" />
+
+        <ImageView
+            android:id="@+id/diamond6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/diamond6" />
+
+        <ImageView
+            android:id="@+id/heart7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/heart7" />
+
+        <ImageView
+            android:id="@+id/spade4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/spade4" />
+
+        <ImageView
+            android:id="@+id/club6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/club6" />
+
+        <ImageView
+            android:id="@+id/diamond7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/diamond7" />
+
+        <ImageView
+            android:id="@+id/heart8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/heart8" />
+
+        <ImageView
+            android:id="@+id/spade5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/spade5" />
+
+        <ImageView
+            android:id="@+id/club7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/club7" />
+
+        <ImageView
+            android:id="@+id/diamond8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/diamond8" />
+
+        <ImageView
+            android:id="@+id/heart9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/heart9" />
+
+        <ImageView
+            android:id="@+id/spade6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/spade6" />
+
+        <ImageView
+            android:id="@+id/club8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/club8" />
+
+        <ImageView
+            android:id="@+id/diamond9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/diamond9" />
+
+        <ImageView
+            android:id="@+id/heartking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/heartking" />
+
+        <ImageView
+            android:id="@+id/spade7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/spade7" />
+
+        <ImageView
+            android:id="@+id/club9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/club9" />
+
+        <ImageView
+            android:id="@+id/heart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/heart1" />
+
+        <ImageView
+            android:id="@+id/spade8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/spade8" />
+
+        <ImageView
+            android:id="@+id/heart10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/heart10" />
+
+        <ImageView
+            android:id="@+id/spade9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desempilharCarta"
+            app:srcCompat="@drawable/spade9" />
+
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
